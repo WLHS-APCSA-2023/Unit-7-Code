@@ -15,7 +15,17 @@ public class Sequence {
     public ArrayList<Integer> getValues(){
         return values;
     }
-
+    
+    public Sequence append(Sequence other){
+        Sequence combinedSequence = new Sequence();
+        for(Integer value: values){
+            combinedSequence.add(value);
+        }
+        for(Integer value: other.values){
+            combinedSequence.add(value);
+        }
+        return combinedSequence;
+    }
 
     public String toString(){
         return values.toString();
