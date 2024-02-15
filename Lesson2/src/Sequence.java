@@ -12,9 +12,10 @@ public class Sequence {
         values.add(n);
     }
 
-    public Sequence append(Sequence other){
-        
+    public ArrayList<Integer> getValues(){
+        return values;
     }
+
 
     public String toString(){
         return values.toString();
