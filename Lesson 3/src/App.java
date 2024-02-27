@@ -23,6 +23,13 @@ public class App {
          }
          // Remove all even numbers from the list (the list
          // is mutated)
+         for(int i = 0; i<flexibleList.size(); i++){
+            int current = flexibleList.get(i);
+            if(current % 2 == 0){
+                flexibleList.remove(i);
+            }
+         }
+
 
          // Print this even-less list
     }
